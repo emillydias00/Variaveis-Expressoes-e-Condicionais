@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+
+    int a, b, c;
+
+    printf("Digite três valores inteiros: ");
+    scanf("%i %i %i", &a, &b, &c);
+
+    if (a > b && a > c) {
+        printf("%i é maior que %i e %i", a, b, c);
+    }
+    else if (b > a && b > c) {
+        printf("%i é maior que %i e %i", b, a, c);
+    }
+    else if (c > a && c > b)  {
+        printf("%i é maior que %i e %i", c, a, b);
+    }
+    else if (a == b && a > c) {
+        printf("%i é maior que %i", a, c);
+    }
+    else if (a > b && a == c) {
+        printf("%i é maior que %i", a, b);
+    }
+    else if (b == c && b > a)  {
+        printf("%i é maior que %i", b, a);
+    }
+    else {
+        printf("Todos os números são iguais");
+    }
+
+    return 0;
+}
